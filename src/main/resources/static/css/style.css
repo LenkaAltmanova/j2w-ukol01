@@ -1,97 +1,79 @@
-/* Moderní box model - nastavená šířka boxu je včetně paddingu a borderu */
+/* Reset some default styles for better consistency */
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
-/*
-------------------------------------------------
-Komentáře se v css píšou jinak než v html!
-To nahoře je černá magie, na to raději nešahej.
-Ale sem dolů už si můžeš psát, co budeš chtít.
-------------------------------------------------
-*/
-body{
-  font-size: 20px;
-  font-family: sans-serif;
+/* Base styles for the body */
+body {
+    font-size: 20px;
+    font-family: Arial, sans-serif; /* Specify font and fallbacks */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-/*taky způsob a lepší, jak nastylovat více věcí naráz, ale lze i zvlášť v h1 , h2 atd.
-h1,
-h2,
-h3{
-  font-family: serif;
-  font-style: italic;
+/* Header styles */
+header {
+    text-align: center; /* Center-align text within the header */
+    background-color: #f5f5f5; /* Background color */
+    padding: 20px; /* Add spacing around the content */
 }
-vícenásobný selektor je lepší použít, když se nějaké informace opakují a dá se to takto zjednodušit*/
 
+/* Main heading styles */
 h1 {
-  color: red;
-  text-align: center;
-  font-family: serif;
-  font-style: italic;
-  font-size: 60px;
+    color: #333; /* Text color */
+    font-style: italic; /* Italicize the text */
+    font-size: 2em; /* Set font size */
 }
 
+/* Section styles */
+section {
+    margin: 20px; /* Add margin around each section */
+    padding: 20px; /* Add padding within each section */
+    background-color: #f9f9f9; /* Background color */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 8px; /* Round the corners */
+}
+
+/* Section heading styles */
 h2 {
-  color: #756158;
-  font-family: serif;
-  text-align: center;
-  font-style: italic;
-  font-size: 48px;
-  margin: 100px;
-  border: 2px solid black;
-}
-/*margin a padding dokáže "box" odsadit mezi elementy, je mezi nimi rozdíl, nastudovat*/
-
-
-h3{
-  color: #756158;
-  font-family: serif;
-  font-style: italic;
-  font-size: 24px;
+    color: #756158; /* Text color */
+    font-style: italic; /* Italicize the text */
+    font-size: 1.5em; /* Set font size */
+    margin-bottom: 10px; /* Add spacing below the heading */
 }
 
-a {
-  color: #756158;
-  font-family: serif;
-  font-style: italic;
+/* Image styles */
+img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain image proportions */
+    border: 2px solid #756158; /* Add a border */
+    border-radius: 8px; /* Round the corners */
 }
 
-p {
-  font-family: sans-serif;
-  font-size: 20px;
+/* Table styles */
+table {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse; /* Collapse table borders */
+    margin-top: 10px; /* Add spacing above the table */
 }
 
-footer{
-  text-align: center;
+table, th, td {
+    border: 1px solid #ddd; /* Add table cell borders */
 }
 
-  /*section {
-  background-color: yellow;
-}*/
-
-
-.mapa img {
-/*width: 200px;
-height: 150px;*/
-width: 32%;
-border-width: 2px;
-border-style: solid;
-border-color: #756158;
-border-radius: 8px;
-/*border: 2px solid #756158;*/
+th, td {
+    padding: 10px; /* Add padding within table cells */
+    text-align: left; /* Left-align text within cells */
 }
 
-.foto.namesti img{
-  border-radius: 20px 0px 20px 20px;
+/* Footer styles */
+footer {
+    text-align: center; /* Center-align text within the footer */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Add spacing around the content */
 }
-
-
-
-
